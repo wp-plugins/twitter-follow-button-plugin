@@ -9,7 +9,7 @@ Author URI: CMSVoteUp.com
 License:  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2
 */
 
-define("twitter_follow_button","1.0",false);
+define("twitter_follow_button","1.1",false);
 
 function twitter_follow_button_url( $path = '' ) {
 	global $wp_version;
@@ -50,7 +50,7 @@ function add_twitter_follow_button_automatic($content){
 	$data_text_color = $twitter_follow_button_options['data_text_color']; //800080
 	$data_link_color = $twitter_follow_button_options['data_link_color']; //800080
 	$lang = $twitter_follow_button_options['lang'];
-	//$creditOn = $twitter_follow_button_options['creditOn'];
+	$creditOn = $twitter_follow_button_options['creditOn'];
 
 	$htmlCode ="<div style='$cssStyle'>";
 	$htmlCode .= "<a href=\"http://twitter.com/$screen_name\" class=\"twitter-follow-button\" data-show-count=\"$data_show_count\" data-button=\"$data_button\" data-text-color=\"$data_text_color\" data-link-color=\"$data_link_color\" data-lang=\"$lang\">Follow @$screen_name</a>\n";
@@ -89,7 +89,7 @@ function add_twitter_follow_button(){
 	$data_text_color = $twitter_follow_button_options['data_text_color']; //800080
 	$data_link_color = $twitter_follow_button_options['data_link_color']; //800080
 	$lang = $twitter_follow_button_options['lang'];
-	//$creditOn = $twitter_follow_button_options['creditOn'];
+	$creditOn = $twitter_follow_button_options['creditOn'];
 
 	$htmlCode ="<div style='$cssStyle'>";
 	$htmlCode .= "<a href=\"http://twitter.com/$screen_name\" class=\"twitter-follow-button\" data-show-count=\"$data_show_count\" data-button=\"$data_button\" data-text-color=\"$data_text_color\" data-link-color=\"$data_link_color\" data-lang=\"$lang\">Follow @$screen_name</a>\n";

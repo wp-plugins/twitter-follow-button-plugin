@@ -31,3 +31,6 @@ If you have questions, please send to support[at]cmsvoteup[dot]com
 = v1.0 06.02.2011 =
 initial release
 
+= v1.1 06.03.2011 =
+minor change
+
